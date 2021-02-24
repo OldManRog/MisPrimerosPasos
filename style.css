@@ -378,15 +378,12 @@ nav {
 }
 
 .reachout-form  {
+text-align:center;
 padding: 15px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+
 }
 
 .reachout-box h1 {
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,13 +396,13 @@ align-items: center;
 .reachout-flex {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
 }
 
-.reachout-field {
-  width: 100%;
+ .reachout-field{
+  width: 80%;
+  height: 30px;
   border: none;
-  border-radius: 10px;
   margin: 3px;
 }
 
@@ -414,19 +411,16 @@ align-items: center;
 }
 
 .reachout-text {
- width: 100%;
+ width: 80%;
  height: 100px;
- margin-top: 3px;
- margin-bottom: 10px;
- border-radius: 10px;
+ margin-top: 3px;cli
  border: none;
 }
 
 
 .reachout-button {
-  width: 100%;
+  width: 80%;
   border: none;
-  border-radius: 10px;
   background: rgb(241, 209, 148);
 }
 
