@@ -464,8 +464,15 @@ padding: 15px;
   outline: none;
   outline-style: none;
 }
-/* Enf of header */
 
+.getstarted-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+  background-size: cover;
+}
+
+/* End of header */
 /* Footer */
 footer {
   background: rgba(0,128,0,.5);
