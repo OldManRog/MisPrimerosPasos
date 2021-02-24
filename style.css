@@ -350,6 +350,7 @@ nav {
 
 .heading {
   font-size: 4rem;
+  position: relative;
 }
 
 .heading-paragraph {
@@ -362,9 +363,13 @@ nav {
 .header-button {
   border-style: none;
   background: rgb(241, 209, 148);
+  font-size: 15px;
   border: solid 1px;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 5px;
+  width: 100px;
+  position: absolute;
+  bottom: 25px;
+  border-radius: 15px;
   outline: none;
   font-family: "Cormorant Garamond", serif;
 }
@@ -377,7 +382,6 @@ nav {
 .header-button:active {
   background: rgb(252, 205, 118);
   border: solid 1px;
-  padding: 10px 10px;
   outline: none;
   outline-style: none;
 }
