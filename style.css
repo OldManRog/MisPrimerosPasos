@@ -351,6 +351,7 @@ nav {
 .heading {
   font-size: 4rem;
   position: relative;
+  
 }
 
 .heading-paragraph {
@@ -358,6 +359,74 @@ nav {
   font-weight: 500;
   color: var(--Primary-color);
   max-width: 70rem;
+}
+
+.reachout-box {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 250px;
+ right: 150px;
+ box-sizing: border-box;
+ box-shadow: 0px 0px 10px 0px #666666;
+ width: 500px;
+ height: 300px;
+
+}
+
+.reachout-form  {
+padding: 15px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.reachout-box h1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+  width: 100%;
+  background-color: white;
+  color: orange;
+}
+
+.reachout-flex {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.reachout-field {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.reachout-field::placeholder {
+ padding: 10px;
+}
+
+.reachout-text {
+ width: 100%;
+ height: 100px;
+ margin-top: 3px;
+ margin-bottom: 10px;
+ border-radius: 10px;
+ border: none;
+}
+
+
+.reachout-button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: rgb(241, 209, 148);
 }
 
 .header-button {
@@ -379,7 +448,9 @@ nav {
 }
 
 .header-button:hover,
-.header-button:active {
+.header-button:active, 
+.reachout-button:hover,
+.reachout-button:active {
   background: rgb(252, 205, 118);
   border: solid 1px;
   outline: none;
