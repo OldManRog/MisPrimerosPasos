@@ -508,8 +508,6 @@ padding: 15px;
   background-color: purple;
   border-top-right-radius:8px;
   border-top-left-radius:8px;
-  
-
 }
 
 .topfill2 {
@@ -517,8 +515,6 @@ padding: 15px;
   background-color: green;
   border-top-right-radius:8px;
   border-top-left-radius:8px;
-
-
 }
 
 .topfill3 {
@@ -526,8 +522,11 @@ padding: 15px;
   background-color: orange;
   border-top-right-radius:8px;
   border-top-left-radius:8px;
- 
+}
 
+a {
+  text-decoration: none;
+  color: white;
 }
 /* End of header */
 /* Footer */
