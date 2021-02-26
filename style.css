@@ -21,7 +21,7 @@ nav {
   align-items: center;
   min-height: 7vh;
   background: white;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Itim', cursive;
   font-size: 15px;
   border-bottom: solid bisque 0.7px;
 }
@@ -327,25 +327,30 @@ nav {
 /* Header */
 .header {
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 45%, rgba(245,215,241,0) 100%),
+background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 30%, rgba(245,215,241,0) 100%),
     url(imgs/kidsimage.jpeg) center no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Itim', cursive;
   position: relative;
   padding: 0;
   margin: 0;
+  border: none;
  
   
 }
 
-.most {
+.purple {
   color: purple;
 }
 
-.best {
+.orange {
   color: orange;
+}
+
+.green {
+  color: green;
 }
 
 .clip-path {
@@ -392,20 +397,22 @@ background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 45%, rgba
 
 .header-button {
   border-style: none;
-  background: rgb(241, 209, 148);
+  background: rgb(185, 120, 190);
+  color: white;
   font-size: 15px;
-  border: solid 1px;
+  border-bottom: solid .3px;
+  border-right: solid 2px ;
   padding: 5px;
   width: 100px;
   border-radius: 15px;
   outline: none;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Itim', cursive;
 }
 
 .header-p {
   font-size: 15px;
-  font-family:Verdana, Geneva, sans-serif;
-  text-transform: none;
+  font-family: 'Schoolbell', cursive;
+  text-transform: lowercase;
   text-shadow: none;
 }
 
@@ -413,8 +420,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 45%, rgba
 .header-button:active, 
 .reachout-button:hover,
 .reachout-button:active {
-  background: rgb(252, 205, 118);
-  border: solid 1px;
+  background: rgb(182, 109, 187);
   outline: none;
   outline-style: none;
 }
@@ -487,7 +493,10 @@ padding: 15px;
 .reachout-button {
   width: 80%;
   border: none;
-  background: rgb(241, 209, 148);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: rgb(185, 120, 190);
+  color: white;
 }
 
 
@@ -519,6 +528,7 @@ padding: 15px;
   box-shadow: 0px 0px 10px 0px #666666;
   margin: 20px;
   color: white;
+  font-family: 'Itim', cursive;
 }
 
 
@@ -552,7 +562,8 @@ a {
   display: grid;
   grid-template-columns: repeat(3,auto);
   background: rgb(244,244,244);
-background: linear-gradient(90deg, rgba(244,244,244,0) 0%, rgba(255,255,255,0.47522759103641454) 47%);
+  background: linear-gradient(90deg, rgba(244,244,244,0) 0%, rgba(255,255,255,0.47522759103641454) 47%);
+
 }
 .interest {
   display: flex;
@@ -568,6 +579,7 @@ background: linear-gradient(90deg, rgba(244,244,244,0) 0%, rgba(255,255,255,0.47
   align-items: center;
   grid-column: 2/3;
   grid-row: 1/2;
+  font-family: 'Itim', cursive;
  
 }
 .interest-form {
