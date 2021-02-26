@@ -14,6 +14,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet" />
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -60,10 +62,15 @@
     <div class="header">
         <div class="header-text">
             <h1 class="heading">
-                We do our most<br />
-                to provide the best <br />
+                We do our<span class="most">most</span>
+                to provide the <span class="best">best</span> 
                 for your child
+                <p class="header-p"> 10 years of love for what we do <br>From all ages, we dedicate ourselves <br> to education and fostering growth.</p>
+                <div class="header-button-flex">
+                    <button type="submit" class="header-button" > Learn More </button> 
+                </div> 
             </h1>
+            
         </div>
         <div class="reachout-box">
             <h1> We'd love to hear from you! </h1>
@@ -76,9 +83,7 @@
                 </form>
             </div>
         </div>
-            <div class="header-button-flex">
-            <button type="submit" class="header-button" > Learn More </button> 
-        </div>
+            
     </div>
 </div>
     <!-- End of header text -->
@@ -97,8 +102,33 @@
                 <h2 class="topfill3"> Be Worry Free! </h2>
                 <p> Done! you'll be worry free, knowing your children will be in good hands! we'll go over orientation and make sure everything is ready to go, easy as 1 2 3! </p>
            </div>
-           
         </div>
+    </div>
+    <div class="interest-container-grid">
+    <h1 class="interest-header"> Start you first steps with us!</h1>
+    <div class="interest">
+        <form action="" class="interest-form">
+           <label for=""> First Name </label> 
+           <input type="text" placeholder="First Name">
+           <label for=""> Last Name </label> 
+           <input type="text" placeholder="Last Name">
+           <label for=""> Email </label> 
+           <input type="text" placeholder="Email">
+           <label for=""> Phone Number </label> 
+           <input type="text" placeholder="Phone Number">
+           <label for="tentacles">Number of Children:</label>
+           <input type="number" id="Children" name="Children"
+            min="1" max="10">
+           <label for="start">Start date:</label>
+           <input type="date" id="start" name="child-start"
+            value="2021-02-25"
+            min="2021-02-25" max="2030-12-31">
+            <label for="extra"> Let us know any extra details!</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit"> Submit</button>
+         </form>
+    </div>
+    <img src="/imgs/Teal and Orange Boxes Art & Design Logo.png" alt="Daycare Logo" class="daycare-logo">
     </div>
     <!-- Bottom Navbar -->
     <footer>

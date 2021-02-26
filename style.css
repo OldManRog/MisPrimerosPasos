@@ -326,11 +326,8 @@ nav {
 
 /* Header */
 .header {
-  background: linear-gradient(
-      rgba(163, 163, 162, 0.5),
-      rgba(243, 208, 238, 0.3),
-      rgba(44, 8, 51, 0.3)
-    ),
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 45%, rgba(245,215,241,0) 100%),
     url(imgs/kidsimage.jpeg) center no-repeat;
   background-size: cover;
   width: 100vw;
@@ -343,34 +340,85 @@ nav {
   
 }
 
+.most {
+  color: purple;
+}
+
+.best {
+  color: orange;
+}
+
 .clip-path {
   background: rgb(232,215,165);
-  background: radial-gradient(circle, rgba(250,215,165,0.9990371148459384) 0%, rgba(237,210,236,1) 49%, rgba(163,163,163,0.26514355742296913) 100%);
+  background: radial-gradient(circle, rgba(232,215,165,0.2090371148459384) 10%, rgba(237,210,236,.50) 0%, rgba(163,163,163,0.10) 100%),
 }
 
 .header-text {
   letter-spacing: 0.1rem;
   color: var(--Primary-color);
   display: grid;
-  grid-template-columns: repeat(1, 1000px);
-  grid-template-rows: repeat(1, 500px);
-  justify-content: flex-start;
-  padding: 50px;
+  grid-template-columns: repeat(1, 700px);
+  grid-template-rows: repeat(1, 70vh);
   align-items: center;
+  justify-items: center;
+  padding: 50px;
   text-transform: uppercase;
-  width: 100%;
-  height: 50%;
-  
+  width: 90%;
+  height: 100%;
+  color: green;
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px 10px white,
+    3px 0px 3px black,
+    0px 0px 0px black;
+
   /*position: relative;*/
 }
 
 .heading {
   font-size: 4rem;
  /* position: relative;*/
-  width: 50%;
-
-  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.header-button-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.header-button {
+  border-style: none;
+  background: rgb(241, 209, 148);
+  font-size: 15px;
+  border: solid 1px;
+  padding: 5px;
+  width: 100px;
+  border-radius: 15px;
+  outline: none;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.header-p {
+  font-size: 15px;
+  font-family:Verdana, Geneva, sans-serif;
+  text-transform: none;
+  text-shadow: none;
+}
+
+.header-button:hover,
+.header-button:active, 
+.reachout-button:hover,
+.reachout-button:active {
+  background: rgb(252, 205, 118);
+  border: solid 1px;
+  outline: none;
+  outline-style: none;
+}
+
 
 /*.heading-paragraph {
   font-size: 1rem;
@@ -442,40 +490,11 @@ padding: 15px;
   background: rgb(241, 209, 148);
 }
 
-.header-button-flex {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  bottom: 100px;
-}
-
-.header-button {
-  border-style: none;
-  background: rgb(241, 209, 148);
-  font-size: 15px;
-  border: solid 1px;
-  padding: 5px;
-  width: 100px;
-  border-radius: 15px;
-  outline: none;
-  font-family: "Cormorant Garamond", serif;
-}
-
-.header-button:hover,
-.header-button:active, 
-.reachout-button:hover,
-.reachout-button:active {
-  background: rgb(252, 205, 118);
-  border: solid 1px;
-  outline: none;
-  outline-style: none;
-}
 
 .getstarted-container {
   width: 100vw;
-  background: rgb(232,215,165);
-  background: radial-gradient(circle, rgba(232,215,165,0.9990371148459384) 0%, rgba(237,210,236,1) 49%, rgba(163,163,163,0.26514355742296913) 100%);
+  background: rgb(244,244,244);
+  background: linear-gradient(90deg, rgba(244,244,244,0) 0%, rgba(255,255,255,0.47522759103641454) 47%);
   background-size: cover;
   padding: 20px;
 }
@@ -528,6 +547,40 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.interest-container-grid {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  background: rgb(244,244,244);
+background: linear-gradient(90deg, rgba(244,244,244,0) 0%, rgba(255,255,255,0.47522759103641454) 47%);
+}
+.interest {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  grid-column: 1/2;
+}
+.interest-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+ 
+}
+.interest-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.daycare-logo {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+
 /* End of header */
 /* Footer */
 footer {
@@ -595,7 +648,8 @@ footer .notice {
   grid-template-columns: repeat(2,1fr);
   grid-auto-rows:minmax(200px,auto);
   font-family: "Source Sans Pro", "Arial", sans-serif;
-  background-color: rgba(241, 234, 209, 0.788);
+  background: rgb(237,210,236);
+  background: radial-gradient(circle, rgba(237,210,236,1) 0%, rgba(242,240,235,0.9990371148459384) 50%, rgba(235,187,228,0.26514355742296913) 100%);;
   grid-gap: 25px;
   /*grid-row-gap: 10px;
   grid-column-gap: 10px*/
@@ -754,7 +808,8 @@ grid-row: 2 / 3;
   justify-items: center;
   align-items: center;
   grid-gap: none;
-  background-color: rgba(243, 220, 146, 0.616);
+  background: rgb(237,210,236);
+background: radial-gradient(circle, rgba(237,210,236,1) 0%, rgba(242,240,235,0.9990371148459384) 50%, rgba(235,187,228,0.26514355742296913) 100%);;
 }
 
 .icon-text1,
