@@ -214,7 +214,7 @@ nav {
   letter-spacing: 4px;
   font-weight: bold;
   font-size: 20px;
-  animation: navLinkFade 0.5s;
+  animation: navLinkFade 5s;
   padding: 7px;
   border: bottom 1px;
 }
@@ -277,7 +277,7 @@ nav {
     justify-self: center;
     width: 50%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform .5s ease-in;
     z-index: 300;
   }
 
