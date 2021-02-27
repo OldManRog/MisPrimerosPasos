@@ -213,10 +213,11 @@ nav {
   text-decoration: none;
   letter-spacing: 4px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 13px;
   animation: navLinkFade 5s;
   padding: 7px;
   border: bottom 1px;
+  font-family: 'Shippori Mincho', serif;
 }
 .nav-links .purple:hover {
   border-bottom: solid purple 2px;
@@ -327,7 +328,7 @@ nav {
 /* Header */
 .header {
   background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 30%, rgba(245,215,241,0) 100%),
+ background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 30%, rgba(245,215,241,0) 100%),
     url(imgs/kidsimage.jpeg) center no-repeat;
   background-size: cover;
   width: 100vw;
@@ -337,8 +338,6 @@ background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 30%, rgba
   padding: 0;
   margin: 0;
   border: none;
- 
-  
 }
 
 .purple {
@@ -353,21 +352,16 @@ background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 30%, rgba
   color: green;
 }
 
-.clip-path {
-  background: rgb(232,215,165);
-  background: radial-gradient(circle, rgba(232,215,165,0.2090371148459384) 10%, rgba(237,210,236,.50) 0%, rgba(163,163,163,0.10) 100%),
-}
 
 .header-text {
   letter-spacing: 0.1rem;
   color: var(--Primary-color);
   display: grid;
-  grid-template-columns: repeat(1, 700px);
+  grid-template-columns: repeat(1, 500px);
   grid-template-rows: repeat(1, 70vh);
   align-items: center;
   justify-items: center;
   padding: 50px;
-  text-transform: uppercase;
   width: 90%;
   height: 100%;
   color: green;
@@ -376,13 +370,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 30%, rgba
   text-shadow: 0px 1px 10px white,
     3px 0px 3px black,
     0px 0px 0px black;
-
-  /*position: relative;*/
 }
 
 .heading {
   font-size: 4rem;
- /* position: relative;*/
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -390,14 +381,15 @@ background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 30%, rgba
 }
 .header-button-flex {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 100%;
 }
 
 .header-button {
   border-style: none;
-  background: rgb(185, 120, 190);
+  background-color: rgb(162, 72, 221);
   color: white;
   font-size: 15px;
   border-bottom: solid .3px;
@@ -411,16 +403,18 @@ background: linear-gradient(90deg, rgba(255,255,255,1.522759103641454) 30%, rgba
 
 .header-p {
   font-size: 15px;
-  font-family: 'Schoolbell', cursive;
+  font-family: 'Shippori Mincho', serif;
   text-transform: lowercase;
   text-shadow: none;
 }
+
+
 
 .header-button:hover,
 .header-button:active, 
 .reachout-button:hover,
 .reachout-button:active {
-  background: rgb(182, 109, 187);
+  background: rgb(169, 4, 180);
   outline: none;
   outline-style: none;
 }
@@ -463,6 +457,7 @@ padding: 15px;
   width: 100%;
   background-color: white;
   color: orange;
+  font-family: 'Shippori Mincho', serif;
 }
 
 .reachout-flex {
@@ -495,15 +490,16 @@ padding: 15px;
   border: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  background: rgb(185, 120, 190);
+  background-color: rgb(162, 72, 221);
   color: white;
+  font-family: 'Itim', cursive;
 }
 
 
 .getstarted-container {
   width: 100vw;
   background: rgb(244,244,244);
-  background: linear-gradient(90deg, rgba(244,244,244,0) 0%, rgba(255,255,255,0.47522759103641454) 47%);
+background: linear-gradient(90deg, rgba(244,244,244,.50) 50%, rgba(255,255,255,.2) 60%);
   background-size: cover;
   padding: 20px;
 }
@@ -531,10 +527,14 @@ padding: 15px;
   font-family: 'Itim', cursive;
 }
 
+.step-text p {
+  font-family: 'Shippori Mincho', serif;
+}
+
 
 .topfill1 {
   width: 100%;
-  background-color: purple;
+  background-color: rgb(162, 72, 221);
   border-top-right-radius:8px;
   border-top-left-radius:8px;
 }
@@ -560,35 +560,88 @@ a {
 
 .interest-container-grid {
   display: grid;
-  grid-template-columns: repeat(3,auto);
-  background: rgb(244,244,244);
-  background: linear-gradient(90deg, rgba(244,244,244,0) 0%, rgba(255,255,255,0.47522759103641454) 47%);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 90%;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(244,244,244,1) 58%);
 
 }
 .interest {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
+  align-items: center;
+  text-align: center;
   grid-column: 1/2;
+  grid-row: 1/2;
+  width: 500px;
+  height: 95%;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #575555;
 }
 .interest-header {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  grid-column: 2/3;
-  grid-row: 1/2;
+  flex-direction: column;
+  width: 425px;
+  padding: 10px;
+ text-align: center;
   font-family: 'Itim', cursive;
- 
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 .interest-form {
   display: flex;
   flex-direction: column;
+  align-items: left;
+}
+
+.interest h1 {
+  width: 100%;
+  background-color: #8e2de2;
+  color: white;
+
+}
+
+.interest-form input {
+  border: none;
+  height: 30px;
+  font-family: 'Shippori Mincho', serif;
+  border: solid 1px purple;
+}
+.interest-form ::placeholder {
+  padding: 20px;
+  color: rgb(145, 47, 145);
+}
+.interest-form input:focus {
+  outline: none;
+}
+.interest-form label {
+  letter-spacing: 2px;
+  font-family: 'Shippori Mincho', serif;
+  color: white;
+}
+.interest-form textarea {
+  max-width: 250px;
+  min-width: 250px;
+  max-height: 80px;
+  min-height: 80px;
+  border: none;
+  border-bottom: 1px purple solid;
+  box-shadow: 0px 0px 2px 0px rgb(78, 2, 78);
+}
+.interest-form textarea:focus {
+  outline: none;
+}
+
+.interest-form button {
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgb(162, 72, 221);
 }
 
 .daycare-logo {
-  grid-column: 3/4;
+  grid-column: 2/3;
   grid-row: 1/2;
 }
 
