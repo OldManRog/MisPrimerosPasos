@@ -1,11 +1,152 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Itim&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav>
+        <div class="nav-logo">
+            <h1>
+                <span class="flex">m</span>
+                <span class="flex">i</span>
+                <span class="flex">s</span>
+                <span class="flex space">p</span>
+                <span class="flex">r</span>
+                <span class="flex">i</span>
+                <span class="flex">m</span>
+                <span class="flex">e</span>
+                <span class="flex">r</span>
+                <span class="flex">o</span>
+                <span class="flex space-1">s</span>
+                <span class="flex">p</span>
+                <span class="flex">a</span>
+                <span class="flex">s</span>
+                <span class="flex">o</span>
+                <span class="flex">s</span>
+            </h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="style-nav purple">Home</a></li>
+            <li><a href="mission.html" class="style-nav orange">Our Mission</a></li>
+            <li><a href="photo.html" class="style-nav green ">Photo Gallery</a></li>
+            <li><a href="contact.html" class="style-nav purple">Contact us</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    <!-- Header Text -->
+    <div class="clip-path">
+    <div class="header">
+        <div class="header-text">
+            <div class="heading">
+                <div class="header-button-flex">
+                <img src="images/imgs/2.png" alt="">
+                <p class="header-p"> 10 years of <span class="purple"> love</span> for what we do <br>From all ages, we dedicate <br> ourselves to <span class="orange"> education </span>  <br> and fostering <span class="green"> growth in your family </span></p>
+                    <button type="submit" class="header-button" > Learn More </button> 
+                </div> 
+            </div>
+            
+        </div>
+        <div class="reachout-box">
+            <h1> We'd love to hear from you! </h1>
+            <div class="reachout-form">
+                <form action="" class="reachout-flex">
+                    <input type="text" placeholder="name" class="reachout-field">
+                    <input type="email" placeholder="email" class="reachout-field">
+                    <textarea name="Leave us a message!" id="" cols="30" rows="10" class="reachout-text"></textarea>
+                    <input type="submit" name="submit" class="reachout-button">
+                </form>
+            </div>
+        </div>
+            
+    </div>
+</div>
+    <!-- End of header text -->
+    <!-- get started -->
+    <div class="getstarted-container">
+       <div class="getstarted-grid">
+           <div class="step-text text-align">
+               <h2 class="topfill1"> <a href="" target="_blank"> Express your interest! </a></h2>
+               <p> Fill out our form of interest, <br/> and we will reach out immediately with next steps. <br/> We can't wait to here from you! </p>
+           </div>
+           <div class="step-text text-align">
+                <h2 class="topfill2"> Family Time! </h2>
+                <p> We'll reach out to get to know you and your family better. We care about your needs, and want to learn more! we'll have a quick call and go over next steps. </p>
+           </div>
+           <div class="step-text text-align">
+                <h2 class="topfill3"> Be Worry Free! </h2>
+                <p> Done! you'll be worry free, knowing your children will be in good hands! we'll go over orientation and make sure everything is ready to go, easy as 1 2 3! </p>
+           </div>
+        </div>
+    </div>
+    <div class="interest-container-grid">
+        <div class="interest">
+           <div class=".interest-header"></div>
+            <form action="/users/create" method="POST" class="interest-form">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Full Name" name="fullName" required>
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter Email Address" name="emailAddress" required>
+                <label>City</label>
+                <input type="city" placeholder="Enter Full City" name="city" required>
+                <label>Country</label>
+                <input type="text" placeholder="Enter Full Country" name="country" required>
+                <button type="submit">Submit</button>
+        </div>
+                    <img src="images/imgs/daycarelogo.png" alt="Daycare Logo" class="daycare-logo">
+    </div>
+    <!-- Bottom Navbar -->
+    <footer>
+        <div class="footer">
+            <div class="content">
+                <div class="company-section">
+                    <a href="index.html" class="footer-flex nav-style">Home</a>
+                    <a href="mission.html" class="footer-flex nav-style">Learn About Us</a>
+                    <a href="photo.html" class="footer-flex nav-style">Visit our Gallery</a>
+                    <a href="contact.html" class="footer-flex nav-style">Contact Us</a>
+                </div>
+               <div class="social">
+                    <i class="fab fa-youtube fa-2x"></i>
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+                <div class="notice">
+                Copyright Proctected &copy;
+                <strong> Mis Primeros Pasos Daycare</strong>
+                </div>
+        </div>
+    </footer>
+    <!-- End of Bottom Navbar -->
+    <script src="/nodeapp/public/javascripts/main.js" async defer></script>
+    <script src="https://kit.fontawesome.com/a4e6abb4e1.js" crossorigin="anonymous"></script>
+</body>
 </html>
