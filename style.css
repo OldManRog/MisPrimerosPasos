@@ -490,7 +490,7 @@ padding: 15px;
   border: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  background-color: rgb(162, 72, 221);
+  background-color: rgb(221, 157, 72);
   color: white;
   font-family: 'Itim', cursive;
 }
@@ -582,7 +582,7 @@ a {
 .interest-header {
   display: flex;
   flex-direction: column;
-  width: 425px;
+  width: 550px;
   padding: 10px;
  text-align: center;
   font-family: 'Itim', cursive;

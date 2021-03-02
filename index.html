@@ -111,23 +111,22 @@
         <h1 class="interest-header"> Start you first steps with us!</h1>
         <div class="interest">
             <h1> Express your interest!</h1>
-            <form action="" class="interest-form">
+            <form action="/users/create" method="POST"class="interest-form">
                     <label for=""> First Name </label> 
-                    <input type="text" placeholder="First Name">
-                    <label for=""> Last Name </label> 
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Full Name" id="fullname" required>
                     <label for=""> Email </label> 
-                    <input type="text" placeholder="Email">
+                    <input type="email" placeholder="Email" id="emailaddress"  required>
                     <label for=""> Phone Number </label> 
-                    <input type="text" placeholder="Phone Number">
+                    <input type="number" placeholder="Phone Number" id="phonenumber" required>
+                    <label for=""> City </label> 
+                    <input type="text" placeholder="City" id="city" required>
                     <label for="number">Number of Children:</label>
-                    <input type="number" id="number" name="number" min="1" max="10" placeholder="Number of children"/>
+                    <input type="number" id="number" name="number" min="1" max="10" placeholder="Number of children" id="children" required/>
                     <label for="start">Start date:</label>
                     <input type="date" id="start" name="child-start"
                     value="2021-02-25"
-                    min="2021-02-25" max="2030-12-31">
+                    min="2021-02-25" max="2030-12-31" id="startDate" required>
                     <label for="extra"> Let us know any extra details!</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
                     <button type="submit">Submit</button>
             </form>
         </div>
